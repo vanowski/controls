@@ -1,0 +1,70 @@
+.input-circular {
+    height: 100px;
+    width: 100px;
+    border: 10px solid #4b4b4b;
+    background: transparent;
+    border-radius: 100%;
+    display:inline-block;
+    margin: 1em;
+    position:relative;
+    text-align:center;
+    line-height: 100px;
+    color: #4b4b4b;
+    font-size: 2em;
+    font-family: sans-serif;
+    cursor: pointer;
+}
+
+.input-circular-data {
+    display: none;
+}
+
+.input-circular-range,
+.input-circular-range-overlap,
+.input-circular-range-helper,
+.input-circular-range:before {
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    border: solid 10px transparent;
+    height: inherit;
+    width: inherit;
+    border-radius: inherit;
+}
+    .input-circular-range_25:before {
+        content: "";
+        transform: rotate(45deg);
+        border-top-color: #7cffe2;
+    }
+    .input-circular-range_50:before {
+        content: "";
+        transform: rotate(45deg);
+        border-top-color: #7cffe2;
+        border-right-color: #7cffe2;
+    }
+    .input-circular-range_75:before {
+        content: "";
+        transform: rotate(45deg);
+        border-top-color: #7cffe2;
+        border-right-color: #7cffe2;
+        border-bottom-color: #7cffe2;
+    }
+    .input-circular-range_100:before {
+        content: "";
+        transform: rotate(45deg);
+        border-top-color: #7cffe2;
+        border-right-color: #7cffe2;
+        border-bottom-color: #7cffe2;
+        border-left-color: #7cffe2;
+    }
+
+.input-circular-range-overlap {
+    border-top-color: #4b4b4b;
+    transform: rotate(45deg);
+}
+
+.input-circular-range-helper {
+    border-top-color: #7cffe2;
+    transform: rotate(225deg);
+    display: none;
+}
